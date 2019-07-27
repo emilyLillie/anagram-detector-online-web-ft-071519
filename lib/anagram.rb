@@ -8,9 +8,9 @@ class Anagram
   
   def match(words)
      anagrams = []
-     words.select do |some_word|
-       if some_word.split("").sort == word.split("").sort
-         anagrams << some_word
+     words.select do |w|
+       if w.split("").sort == word.split("").sort
+         anagrams << w
        end
      end
    end
