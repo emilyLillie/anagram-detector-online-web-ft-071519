@@ -8,5 +8,6 @@ class Anagram
   
   def match (words)
     anagrams = []
+    words.select {|w|
   
 end 
